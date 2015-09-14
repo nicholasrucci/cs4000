@@ -1,0 +1,17 @@
+[14-Sep-2015 12:15:37 America/Denver] PHP Notice:  Undefined index: submit in /home3/goattech/public_html/php/public_html/contact.php on line 5
+[14-Sep-2015 12:17:01 America/Denver] PHP Notice:  Undefined index: submit in /home3/goattech/public_html/php/public_html/contact.php on line 10
+[14-Sep-2015 12:32:12 America/Denver] PHP Parse error:  syntax error, unexpected '$send' (T_VARIABLE) in /home3/goattech/public_html/php/public_html/contact.php on line 12
+[14-Sep-2015 12:32:24 America/Denver] PHP Parse error:  syntax error, unexpected '$send' (T_VARIABLE) in /home3/goattech/public_html/php/public_html/contact.php on line 12
+[14-Sep-2015 12:32:36 America/Denver] PHP Parse error:  syntax error, unexpected '$send' (T_VARIABLE) in /home3/goattech/public_html/php/public_html/contact.php on line 12
+[14-Sep-2015 12:32:41 America/Denver] PHP Parse error:  syntax error, unexpected '$send' (T_VARIABLE) in /home3/goattech/public_html/php/public_html/contact.php on line 12
+[14-Sep-2015 12:45:09 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/contact.php on line 5
+[14-Sep-2015 12:45:49 America/Denver] PHP Parse error:  syntax error, unexpected '{' in /home3/goattech/public_html/php/public_html/contact.php on line 13
+[14-Sep-2015 12:46:11 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/contact.php on line 5
+[14-Sep-2015 12:46:11 America/Denver] PHP Notice:  Use of undefined constant email - assumed 'email' in /home3/goattech/public_html/php/public_html/contact.php on line 13
+[14-Sep-2015 12:46:41 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/contact.php on line 5
+[14-Sep-2015 12:47:17 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/contact.php on line 5
+[14-Sep-2015 13:16:25 America/Denver] PHP Parse error:  syntax error, unexpected ')' in /home3/goattech/public_html/php/public_html/subscription.php on line 12
+[14-Sep-2015 13:18:09 America/Denver] PHP Notice:  Undefined index: name in /home3/goattech/public_html/php/public_html/subscription.php on line 20
+[14-Sep-2015 13:18:09 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/subscription.php on line 24
+[14-Sep-2015 13:19:34 America/Denver] PHP Notice:  Undefined index: name in /home3/goattech/public_html/php/public_html/subscription.php on line 20
+[14-Sep-2015 13:19:34 America/Denver] PHP Notice:  Undefined index: email in /home3/goattech/public_html/php/public_html/subscription.php on line 24
