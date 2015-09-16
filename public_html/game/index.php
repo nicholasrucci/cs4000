@@ -2,8 +2,8 @@
 
 <?php
 
-    $sql_query = "SELECT * FROM games";
-    $result    = mysqli_query($conn, $sql_query);
+    $sql = "SELECT * FROM games";
+    $result    = mysqli_query($conn, $sql);
 
 ?>
 
