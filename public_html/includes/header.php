@@ -16,7 +16,7 @@ $db = substr($url["path"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
 if (!$conn) {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect: ');
 } else {
     echo $conn->host_info . "\n";
 }

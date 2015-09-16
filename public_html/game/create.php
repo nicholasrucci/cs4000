@@ -9,7 +9,7 @@ $genre = $_POST['genre'];
 $creator = $_POST['creator'];
 
 $sql = "INSERT INTO games (title, genre, creator) VALUES ('$title', '$genre', '$creator')";
-mysqli_query($mysql_connection, $sql);
+mysqli_query($conn, $sql);
 
 ?>
 
