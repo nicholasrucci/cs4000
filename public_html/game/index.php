@@ -13,7 +13,7 @@
 
 <?php else: ?>
 
-<table class='table table-hover'>
+<table class='table table-striped table-hover'>
     <tr>
         <th>Title</th>
         <th>Genre</th>

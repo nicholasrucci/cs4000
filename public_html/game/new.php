@@ -2,7 +2,7 @@
 
 <h2>Add a Game to the Database</h2>
 
-<form method="post" action="create.php">
+<form class="form-horizontal" method="post" action="create.php">
     <p>
         <label for="title">Game Title</label><br>
         <input type="text" id="title" name="title">
@@ -16,7 +16,7 @@
         <input type="type" id="creator" name="creator">
     </p>
     <p>
-        <input type="submit" name="submit" value="Add Game">
+        <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
     </p>
 </form>
 
