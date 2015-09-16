@@ -2,7 +2,7 @@
 
 <?php
 
-    $sql = "SELECT * FROM games";
+    $sql = "select * from games;";
     $result    = mysqli_query($conn, $sql);
 
 ?>
