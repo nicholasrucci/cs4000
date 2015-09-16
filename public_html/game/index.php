@@ -7,8 +7,6 @@
 
 ?>
 
-<?= $result ?>
-
 <h2>All Games</h2>
 
 <?php if ($error = mysqli_error($conn)): ?>
