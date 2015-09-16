@@ -7,17 +7,19 @@ if ($_SESSION["views"])
 else
     $_SESSION["views"] = 1;
 
-//$servername = "localhost";
-//$username   = "goattech_nick";
-//$password   = "securePassword1";
-//$database   = "goattech_cs4000";
-//
-//$conn       = new mysqli("localhost", "goattech_nick", "securePassword1", "goattech_cs4000");
-//if (!$conn) {
-//    die('Could not connect: ' . mysql_error());
-//} else {
-//    echo $conn->host_info . "\n";
-//}
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
+if (!$conn) {
+    die('Could not connect: ' . mysql_error());
+} else {
+    echo $conn->host_info . "\n";
+}
 
 ?>
 
