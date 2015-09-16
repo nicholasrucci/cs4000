@@ -4,9 +4,9 @@
 
 <?php
 
-$title = $_POST['title'];
-$genre = $_POST['genre'];
-$creator = $_POST['creator'];
+$title = mysqli_real_escape_string($conn, $_POST['title']);
+$genre = mysqli_real_escape_string($conn, $_POST['genre']);
+$creator = mysqli_real_escape_string($conn, $_POST['creator']);
 
 $sql = "INSERT INTO games (title, genre, creator) VALUES ('$title', '$genre', '$creator')";
 mysqli_query($conn, $sql);
