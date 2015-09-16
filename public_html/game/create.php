@@ -34,6 +34,10 @@ There was a problem: <?= $error ?>
     <?= $creator ?>
 </p>
 
+<p>
+    <a href="game/index.php"><button class="btn btn-primary"></button></a>
+</p>
+
 <?php endif ?>
 
 <?php else: ?>
