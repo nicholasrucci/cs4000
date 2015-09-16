@@ -2,7 +2,7 @@
 
 <?php
 
-    $sql = "select * from games;";
+    $sql = "SELECT * FROM games";
     $result    = mysqli_query($conn, $sql);
 
 ?>
@@ -21,9 +21,9 @@
     </tr>
     <?php while ($row = mysqli_fetch_array($result)): ?>
     <tr>
-        <td><?php $row['title'] ?></td>
-        <td><?php $row['genre'] ?></td>
-        <td><?php $row['creator'] ?></td>
+        <td><?= $row['title'] ?></td>
+        <td><?= $row['genre'] ?></td>
+        <td><?= $row['creator'] ?></td>
     </tr>
     <?php endwhile ?>
 </table>
