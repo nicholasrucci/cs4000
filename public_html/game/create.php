@@ -35,7 +35,7 @@ There was a problem: <?= $error ?>
 </p>
 
 <p>
-    <a href="game/index.php"><button class="btn btn-primary"></button></a>
+    <a href="game/index.php"><button class="btn btn-primary">Back to Games</button></a>
 </p>
 
 <?php endif ?>
