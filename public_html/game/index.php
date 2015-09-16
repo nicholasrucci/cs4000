@@ -1,4 +1,4 @@
-<?php require_once("../includes/header.php") ?>
+<?php require_once("../includes/header.php"); ?>
 
 <?php
 
@@ -6,8 +6,6 @@
     $result    = mysqli_query($conn, $sql);
 
 ?>
-
-<h2>All Games</h2>
 
 <?php if ($error = mysqli_error($conn)): ?>
 
@@ -32,4 +30,4 @@
 
 <?php endif ?>
 
-<?php require_once("../includes/footer.php") ?>
+<?php require_once("../includes/footer.php"); ?>
