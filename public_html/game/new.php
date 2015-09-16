@@ -2,7 +2,7 @@
 
 <h2>Add a Game to the Database</h2>
 
-<form class="form-horizontal" method="post" action="create.php">
+<form class="form-horizontal" method="post" action="game/create.php">
     <p>
         <label for="title">Game Title</label><br>
         <input type="text" id="title" name="title">
