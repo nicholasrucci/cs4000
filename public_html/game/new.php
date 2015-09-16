@@ -13,7 +13,7 @@
     </p>
     <p>
         <label for="creator">Creator</label><br>
-        <input type="type" id="creator" name="creator">
+        <input type="text" id="creator" name="creator">
     </p>
     <p>
         <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
