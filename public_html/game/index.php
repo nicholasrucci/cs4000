@@ -15,7 +15,7 @@
 
 <?php else: ?>
 
-<table>
+<table class='table table-hover'>
     <tr>
         <th>Title</th>
         <th>Genre</th>
