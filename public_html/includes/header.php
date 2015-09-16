@@ -17,8 +17,6 @@ $db = substr($url["path"], 1);
 $conn = new mysqli($server, $username, $password, $db);
 if (!$conn) {
     die('Could not connect: ');
-} else {
-    echo $conn->host_info . "\n";
 }
 
 ?>
@@ -43,11 +41,11 @@ if (!$conn) {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">PHP Includes</a>
+            <a class="navbar-brand" href="/public_html">PHP Includes</a>
           </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class=""><a href="../index.php">Home <span class="sr-only">(current)</span></a></li>
+                <li class=""><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
                 <li><a href="game/index.php">Games</a></li>
                 <li><a href="game/new.php">Add a Game</a></li>
                 <li class="dropdown">
