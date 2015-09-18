@@ -32,6 +32,12 @@
         <td>
             <a href="game/edit.php?id=<?= $row['ID'] ?>">Edit</a>
         </td>
+        <td>
+          <form method="post" action="destroy.php">
+            <input type="hidden" name="id" value="<?= $row["ID"] ?>">
+            <input type="submit" name="submit" value="Delete">
+          </form>
+        </td>
     </tr>
     <?php endwhile ?>
 </table>

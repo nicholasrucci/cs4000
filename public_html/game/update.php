@@ -3,7 +3,7 @@
 <?php if (isset($_POST['submit'])): ?>
 
     <?php
-    $id = $_GET['id'];
+    $id = mysqli_real_escape_string($conn, $_POST['ID']);
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $genre = mysqli_real_escape_string($conn, $_POST['genre']);
     $creator = mysqli_real_escape_string($conn, $_POST['creator']);
@@ -33,7 +33,6 @@
             <strong>Creator:</strong>
             <?= $creator ?>
         </p>
-
         <p>
             <a href="game/index.php"><button class="btn btn-primary">Back to Games</button></a>
         </p>
