@@ -8,7 +8,7 @@
     $genre = mysqli_real_escape_string($conn, $_POST['genre']);
     $creator = mysqli_real_escape_string($conn, $_POST['creator']);
 
-    $sql = "UPDATE games SET title='$title' genre='$genre', creator='$creator' WHERE id='$id'";
+    $sql = "UPDATE games SET title='$title' genre='$genre' creator='$creator' WHERE id='$id'";
     mysqli_query($conn, $sql);
 
     ?>
