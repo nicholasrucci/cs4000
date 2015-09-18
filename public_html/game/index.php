@@ -27,10 +27,10 @@
         <td><?= $row['genre'] ?></td>
         <td><?= $row['creator'] ?></td>
         <td>
-            <a href="games/show.php?ID=<?= $row['ID'] ?>">Details</a>
+            <a href="game/show.php?ID=<?= $row['ID'] ?>">Details</a>
         </td>
         <td>
-            <a href="games/edit.php?ID=<?= $row['ID'] ?>">Edit</a>
+            <a href="game/edit.php?ID=<?= $row['ID'] ?>">Edit</a>
         </td>
     </tr>
     <?php endwhile ?>
