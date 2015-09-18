@@ -26,7 +26,7 @@
         <td><?= $row['genre'] ?></td>
         <td><?= $row['creator'] ?></td>
         <td>
-            <a href="show.php?id=<?= $row['id'] ?>"</a>
+            <a href="show.php?id=<?= $row['id'] ?>">Details</a>
         </td>
     </tr>
     <?php endwhile ?>
