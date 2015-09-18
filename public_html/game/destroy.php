@@ -20,10 +20,4 @@ There was a problem: <?= $error ?>
 
 <?php endif ?>
 
-<?php else: ?>
-
-<?php header('Location: new.php'); ?>
-
-<?php endif ?>
-
 <?php require_once("../includes/footer.php") ?>
