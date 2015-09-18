@@ -18,12 +18,16 @@
         <th>Title</th>
         <th>Genre</th>
         <th>Creator</th>
+        <th></th>
     </tr>
     <?php while ($row = mysqli_fetch_array($result)): ?>
     <tr>
         <td><?= $row['title'] ?></td>
         <td><?= $row['genre'] ?></td>
         <td><?= $row['creator'] ?></td>
+        <td>
+            <a href="show.php?id=<?= $row['id'] ?>"</a>
+        </td>
     </tr>
     <?php endwhile ?>
 </table>
