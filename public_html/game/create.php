@@ -13,7 +13,7 @@ mysqli_query($conn, $sql);
 
 ?>
 
-<?php if ($error = mysqli_error($mysql_connection)): ?>
+<?php if ($error = mysqli_error($conn)): ?>
 
 There was a problem: <?= $error ?>
 
