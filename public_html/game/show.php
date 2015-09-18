@@ -26,6 +26,9 @@
             <strong>Creator</strong>
             <?= $row['creator'] ?>
         </p>
+        <p>
+            <a href="game/index.php"><button class="btn btn-primary">Back to Games</button></a>
+        </p>
     <?php else: ?>
         <p>Sorry, no game exist with that ID</p>
     <?php endif ?>
