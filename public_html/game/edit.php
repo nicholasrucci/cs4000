@@ -29,7 +29,7 @@ $result = mysqli_query($conn, $sql);
                 <input type="text" id="creator" name="creator" value="<?= $row['creator'] ?>">
             </p>
             <p>
-                <a href="game/index.php"><button class="btn btn-warn">Cancel</button></a>
+                <a href="game/index.php"><button class="btn btn-danger">Cancel</button></a>
                 <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
             </p>
         </form>

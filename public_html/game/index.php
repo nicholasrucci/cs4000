@@ -19,6 +19,7 @@
         <th>Genre</th>
         <th>Creator</th>
         <th></th>
+        <th></th>
     </tr>
     <?php while ($row = mysqli_fetch_array($result)): ?>
     <tr>
@@ -27,6 +28,9 @@
         <td><?= $row['creator'] ?></td>
         <td>
             <a href="games/show.php?ID=<?= $row['ID'] ?>">Details</a>
+        </td>
+        <td>
+            <a href="games/edit.php?ID=<?= $row['ID'] ?>">Edit</a>
         </td>
     </tr>
     <?php endwhile ?>
