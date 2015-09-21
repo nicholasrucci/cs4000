@@ -16,7 +16,13 @@ There was a problem: <?= $error ?>
 
 <?php else: ?>
 
-<?php header("Location: index.php"); ?>
+<?php header('Location: new.php'); ?>
+
+<?php endif ?>
+
+<?php else: ?>
+
+<?php header('Location: index.php'); ?>
 
 <?php endif ?>
 
