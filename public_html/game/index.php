@@ -35,7 +35,7 @@
         <td>
           <form method="post" action="game/destroy.php">
             <input type="hidden" name="id" value="<?= $row["ID"] ?>">
-            <input type="submit" name="submit" value="Delete">
+            <input class="btn btn-danger" type="submit" name="submit" value="Delete">
           </form>
         </td>
     </tr>
