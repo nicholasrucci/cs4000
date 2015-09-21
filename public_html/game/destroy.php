@@ -5,7 +5,7 @@
 <?php
 
 $id = mysqli_real_escape_string($conn, $_POST['ID']);
-$sql = "DELETE * FROM games WHERE id='$id'";
+$sql = "DELETE FROM games WHERE id='$id'";
 mysqli_query($conn, $sql);
 
 ?>
@@ -16,7 +16,7 @@ There was a problem: <?= $error ?>
 
 <?php else: ?>
 
-<?php header('Location: new.php'); ?>
+<?php header('Location: index.php'); ?>
 
 <?php endif ?>
 
