@@ -4,7 +4,7 @@
 
 <?php
 
-$id = mysqli_real_escape_string($conn, $_POST['ID']);
+$id = mysqli_real_escape_string($conn, $_POST['id']);
 $sql = "DELETE FROM games WHERE ID='$id'";
 mysqli_query($conn, $sql);
 
