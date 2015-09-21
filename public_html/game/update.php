@@ -3,12 +3,12 @@
 <?php if (isset($_POST['submit'])): ?>
 
     <?php
-    $id = $_GET['id'];
+    $id = mysqli_real_escape_string($conn, $_POST['id']);
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $genre = mysqli_real_escape_string($conn, $_POST['genre']);
     $creator = mysqli_real_escape_string($conn, $_POST['creator']);
 
-    $sql = "UPDATE games SET title='$title', genre='$genre', creator='$creator' WHERE id='$id'";
+    $sql = "UPDATE games SET title='$title', genre='$genre', creator='$creator' WHERE ID='$id'";
     mysqli_query($conn, $sql);
 
     ?>
