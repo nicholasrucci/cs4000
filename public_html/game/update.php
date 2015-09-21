@@ -3,7 +3,7 @@
 <?php if (isset($_POST['submit'])): ?>
 
     <?php
-    $id = mysqli_real_escape_string($conn, $_POST['id']);
+    $id = $_GET['id'];
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $genre = mysqli_real_escape_string($conn, $_POST['genre']);
     $creator = mysqli_real_escape_string($conn, $_POST['creator']);
