@@ -4,14 +4,24 @@
 
     <?php
 
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-    $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO users (name, email, encrypted_password) VALUES ('$name', '$email', '$encrypted_password')";
+    //$encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+     
+    //find user in database
+    $sql = "SELECT * FROM users WHERE email = '$email'";
     mysqli_query($conn, $sql);
+    
+    if ($row = mysqli_query($result)) {
+      if (password_verify($password, $row['encrypted_password'])) {
+        $_SESSION['user_id'] = $row['ID'];
+      } else {
+        echo "Username or password does not match";
+      }
+    } else {
+        echo "Username or password does not match";
+    }
 
     ?>
 

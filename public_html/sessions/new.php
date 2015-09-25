@@ -1,12 +1,8 @@
 <?php require_once("../includes/header.php") ?>
 
-<h2>Sign up!</h2>
+<h2>Login</h2>
 
-<form class="form-horizontal" method="post" action="users/create.php">
-    <p>
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name">
-    </p>
+<form class="form-horizontal" method="post" action="sessions/create.php">
     <p>
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email">
@@ -16,7 +12,7 @@
         <input type="text" id="password" name="password">
     </p>
     <p>
-        <input class="btn btn-primary" type="submit" name="submit" value="Create User">
+        <input class="btn btn-primary" type="submit" name="submit" value="Login">
     </p>
 </form>
 
