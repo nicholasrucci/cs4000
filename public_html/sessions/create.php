@@ -11,7 +11,7 @@
     $sql = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
     
-    if ($row = mysqli_query($result)) {
+    if ($row = mysqli_fetch_array($result)) {
       if (password_verify($password, $row['encrypted_password'])) {
         $success = true;
         $_SESSION['user_id'] = $row['id'];
