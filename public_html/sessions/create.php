@@ -14,7 +14,7 @@
     if ($row = mysqli_query($result)) {
       if (password_verify($password, $row['encrypted_password'])) {
         $success = true;
-        $_SESSION['user_id'] = $row['ID'];
+        $_SESSION['user_id'] = $row['id'];
       } else {
         $success = false;
       }
