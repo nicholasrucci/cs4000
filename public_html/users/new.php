@@ -2,6 +2,14 @@
 
 <h2>Sign up!</h2>
 
+<?php if (isset($errors)): ?>
+<p>The following errors occured</p>
+<ul>
+  <?php foreach ($error as $field => $erros): ?>
+  <li><?= $error ?><li>
+</ul>
+<?php endif ?>
+
 <form class="form-horizontal" method="post" action="users/create.php">
     <p>
         <label for="name">Name</label><br>
