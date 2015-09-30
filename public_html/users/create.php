@@ -8,20 +8,44 @@
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-    $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+    // TODO: validate form data
+    $errors = [];
+    if (empty($email)) {
+      $errors['email'] = "Please enter an email";
+    }
+    if (empty($name)) {
+      $errors['name'] = "Please enter your name";
+    }
+    if (empty($password)) {
+      $errors['password'] = "Please enter a password";
+    }
 
-    $sql = "INSERT INTO users (name, email, encrypted_password) VALUES ('$name', '$email', '$encrypted_password')";
-    mysqli_query($conn, $sql);
+    $form_valid = empty($errors);
+
+    
+    if ($form_valid){
+      $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+
+      $sql = "INSERT INTO users (name, email, encrypted_password) VALUES ('$name', '$email', '$encrypted_password')";
+      mysqli_query($conn, $sql);
+    }
+
+    if ($error = mysqli_error($conn)) {
+      $errors['mysql'] = $error;
+    }
+
+    $form_valid = empty($errors);
 
     ?>
 
-    <?php if ($error = mysqli_error($conn)): ?>
+    <?php if ($form_valid): ?>
 
-        There was a problem: <?= $error ?>
+       <h2>Thanks for signing up</h2> 
 
     <?php else: ?>
 
-        <? header('Location: ../index.php'); ?>
+      <h2>There was a problem</h2> 
+      <?php require_once('new.php') ?>
 
     <?php endif ?>
 

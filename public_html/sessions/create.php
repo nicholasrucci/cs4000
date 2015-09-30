@@ -7,20 +7,19 @@
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-    //$encrypted_password = password_hash($password, PASSWORD_DEFAULT);
-     
     //find user in database
     $sql = "SELECT * FROM users WHERE email = '$email'";
     mysqli_query($conn, $sql);
     
     if ($row = mysqli_query($result)) {
       if (password_verify($password, $row['encrypted_password'])) {
+        $success = true;
         $_SESSION['user_id'] = $row['ID'];
       } else {
-        echo "Username or password does not match";
+        $success = false;
       }
     } else {
-        echo "Username or password does not match";
+      $success = false;
     }
 
     ?>
@@ -31,7 +30,11 @@
 
     <?php else: ?>
 
-        <? header('Location: ../index.php'); ?>
+      <?php if ($success): ?>
+      <h2>You are signed in!</h2> 
+      <?php else: ?>
+      <h2>Invalid email and/or password</h2>
+      <?php endif ?>
 
     <?php endif ?>
 
