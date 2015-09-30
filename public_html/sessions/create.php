@@ -9,7 +9,7 @@
 
     //find user in database
     $sql = "SELECT * FROM users WHERE email = '$email'";
-    mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sql);
     
     if ($row = mysqli_query($result)) {
       if (password_verify($password, $row['encrypted_password'])) {
