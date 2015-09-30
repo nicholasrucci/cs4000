@@ -7,6 +7,7 @@
 <ul>
   <?php foreach ($error as $field => $erros): ?>
   <li><?= $error ?><li>
+  <?php endforeach ?>
 </ul>
 <?php endif ?>
 
