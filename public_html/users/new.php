@@ -2,7 +2,7 @@
 
 <h2>Sign up!</h2>
 
-<form class="form-horizontal" method="post" action="users/create.php">
+<form class="form-horizontal" method="post" action="create.php">
     <p>
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name">
