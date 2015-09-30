@@ -19,6 +19,14 @@ if (!$conn) {
     die('Could not connect: ');
 }
 
+function printStr(&$str) {
+  if (isset($str)) {
+    return $str;
+  } else {
+    return "";
+  }
+}
+
 ?>
 
 <html> 

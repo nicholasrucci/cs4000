@@ -5,11 +5,11 @@
 <form class="form-horizontal" method="post" action="users/create.php">
     <p>
         <label for="name">Name</label><br>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" value="<?= printStr($name) ?>">
     </p>
     <p>
         <label for="email">Email</label><br>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" value="<?= printStr($email) ?>">
     </p>
     <p>
         <label for="password">password</label><br>
