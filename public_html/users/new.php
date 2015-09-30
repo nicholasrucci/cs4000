@@ -5,7 +5,7 @@
 <?php if (isset($errors)): ?>
 <p>The following errors occured</p>
 <ul>
-  <?php foreach ($error as $field => $erros): ?>
+  <?php foreach ($errors as $field => $error): ?>
   <li><?= $error ?><li>
   <?php endforeach ?>
 </ul>
