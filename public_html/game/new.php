@@ -11,7 +11,7 @@
     </ul>
 <?php endif ?>
 
-<form class="form-horizontal" method="post" action="game/create.php">
+<form class="form-horizontal" method="post" action="game/create.php" enctype="multipart/form-data">
     <p>
         <label for="title">Game Title</label><br>
         <input type="text" id="title" name="title">
@@ -23,6 +23,10 @@
     <p>
         <label for="creator">Creator</label><br>
         <input type="text" id="creator" name="creator">
+    </p>
+     <p>
+        <label for="file">Game Art</label><br>
+        <input type="file" id="file" name="file">
     </p>
     <p>
         <input class="btn btn-primary" type="submit" name="submit" value="Add Game">

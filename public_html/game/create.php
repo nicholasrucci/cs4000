@@ -7,6 +7,10 @@
     $title = mysqli_real_escape_string($conn, $_POST['title']);
     $genre = mysqli_real_escape_string($conn, $_POST['genre']);
     $creator = mysqli_real_escape_string($conn, $_POST['creator']);
+    $file = mysqli_real_escape_string($conn, $_POST['file']);
+    $target_path = "../images/";
+    move_uploaded_file($_FILES[$file]['tmp_name'], $target_path)
+
 
     $errors = [];
 
