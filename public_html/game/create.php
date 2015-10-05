@@ -4,39 +4,58 @@
 
 <?php
 
-$title = mysqli_real_escape_string($conn, $_POST['title']);
-$genre = mysqli_real_escape_string($conn, $_POST['genre']);
-$creator = mysqli_real_escape_string($conn, $_POST['creator']);
+    $title = mysqli_real_escape_string($conn, $_POST['title']);
+    $genre = mysqli_real_escape_string($conn, $_POST['genre']);
+    $creator = mysqli_real_escape_string($conn, $_POST['creator']);
 
-$sql = "INSERT INTO games (title, genre, creator) VALUES ('$title', '$genre', '$creator')";
-mysqli_query($conn, $sql);
+    $errors = [];
+
+    if (!ctype_upper($creator)) {
+        $errors['creator'] = "Please type Creator in ALL UPPERCASE CHARACTERS";
+    }
+    if (!ctype_upper($genre)) {
+        $errors['genre'] = "Please type Genre in ALL UPPERCASE CHARACTERS";
+    }
+
+    $form_valid = empty($errors);
+
+    if ($form_valid) {
+        $sql = "INSERT INTO games (title, genre, creator) VALUES ('$title', '$genre', '$creator')";
+        mysqli_query($conn, $sql);
+    }
+
+    if ($error = mysqli_error($conn)) {
+        $errors['mysql'] = $error;
+    }
+
+    $form_valid = empty($errors);
 
 ?>
 
-<?php if ($error = mysqli_error($conn)): ?>
+<?php if ($form_valid): ?>
 
-There was a problem: <?= $error ?>
+    <h2>Your game was added to the database!</h2>
+    <p>
+        <strong>Game Title:</strong>
+        <?= $title ?>
+    </p>
+    <p>
+        <strong>Genre:</strong>
+        <?= $genre ?>
+    </p>
+    <p>
+        <strong>Creator:</strong>
+        <?= $creator ?>
+    </p>
+
+    <p>
+        <a href="game/index.php"><button class="btn btn-primary">Back to Games</button></a>
+    </p>
 
 <?php else: ?>
 
-<h2>Your game was added to the database!</h2>
-
-<p>
-    <strong>Game Title:</strong>
-    <?= $title ?>
-</p>
-<p>
-    <strong>Genre:</strong>
-    <?= $genre ?>
-</p>
-<p>
-    <strong>Creator:</strong>
-    <?= $creator ?>
-</p>
-
-<p>
-    <a href="game/index.php"><button class="btn btn-primary">Back to Games</button></a>
-</p>
+        <h2>There was a problem</h2>
+        <?php require_once('new.php') ?>
 
 <?php endif ?>
 

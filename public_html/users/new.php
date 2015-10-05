@@ -3,7 +3,7 @@
 <h2>Sign up!</h2>
 
 <?php if (isset($errors)): ?>
-<p>The following errors occured:</p>
+<p>The following errors occurred:</p>
 <ul>
   <?php foreach ($errors as $field => $error): ?>
   <li><?= $error ?><li>

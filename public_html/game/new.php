@@ -2,6 +2,15 @@
 
 <h2>Add a Game to the Database</h2>
 
+<?php if (isset($errors)): ?>
+    <p>The following errors occurred:</p>
+    <ul>
+        <?php foreach ($errors as $field => $error): ?>
+        <li><?= $error ?><li>
+            <?php endforeach ?>
+    </ul>
+<?php endif ?>
+
 <form class="form-horizontal" method="post" action="game/create.php">
     <p>
         <label for="title">Game Title</label><br>
