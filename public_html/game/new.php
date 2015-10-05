@@ -24,10 +24,6 @@
         <label for="creator">Creator</label><br>
         <input type="text" id="creator" name="creator">
     </p>
-     <p>
-        <label for="file">Game Art</label><br>
-        <input type="file" id="file" name="file">
-    </p>
     <p>
         <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
     </p>
