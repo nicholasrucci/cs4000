@@ -6,7 +6,7 @@
     <p>The following errors occurred:</p>
     <ul>
         <?php foreach ($errors as $field => $error): ?>
-        <li><?= $error ?><li>
+        <li><?= $error ?></li>
             <?php endforeach ?>
     </ul>
 <?php endif ?>
