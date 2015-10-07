@@ -5,13 +5,13 @@
     <?php
 
     unset($_SESSION['user_id']);
-    header('Location: index.php');
+    header('Location: ../index.php');
 
     ?>
 
 <?php else: ?>
 
-    <?php header('Location: index.php'); ?>
+    <?php header('Location: ../index.php'); ?>
 
 <?php endif ?>
 
