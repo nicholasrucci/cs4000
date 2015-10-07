@@ -71,7 +71,11 @@ function printStr(&$str) {
                 <li><a href="contact.php">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <?php if (isset($_SESSION['id'])): ?>
+                  <li><a href="sessions/destroy">Logout</a></li>
+                <?php else: ?>
+                  <li><a href="sessions/new.php">Login</a> </li>
+                <?php endif ?>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
