@@ -27,11 +27,11 @@
 
     $sql = "SELECT * FROM games";
 
-    if (isset($_GET['filter']) && $_GET['filter_title'] == 'title') {
+    if (isset($_GET['filter_title']) && $_GET['filter_title'] == 'title') {
         $sql .= " ORDER BY title";
     }
 
-    if (isset($_GET['sort']) && $_GET['filter_genre'] == 'genre') {
+    if (isset($_GET['filter_genre']) && $_GET['filter_genre'] == 'genre') {
         $sql .= " ORDER BY genre";
     }
 
