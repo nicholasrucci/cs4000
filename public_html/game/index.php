@@ -2,15 +2,12 @@
 
 <p>
 <form class="form-horizontal" method="get" action="game/index.php">
-    Sort by:
+    Filter by:
     <input type="checkbox" id="filter_title" name="filter_title" value="title">
     <label for="sort_age">By Title</label>
-    <br>
-    Filter by:
     <input type="checkbox" id="filter_genre" name="filter_genre" value="genre">
     <label for="filter_children">By Genre</label>
-    <br>
-    <input type="submit" name="submit" value="Go">
+    <input type="submit" name="submit" value="Go" class="btn btn-success">
 </form>
 </p>
 
