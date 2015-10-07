@@ -1,20 +1,20 @@
 <?php require_once("../includes/header.php"); ?>
 
 <p>
-    <a href="index.php">All Games</a>
-    <a href="index.php?filter=title">By Title</a>
-    <a href="index.php?filter=genre">By Genre</a>
+    <a href="game/index.php">All Games</a>
+    <a href="game/index.php?filter=title">By Title</a>
+    <a href="game/index.php?filter=genre">By Genre</a>
 </p>
 
 <p>
-<form method="get" action="index.php">
+<form method="get" action="game/index.php">
     Sort by:
     <input type="checkbox" id="filter_title" name="filter_title" value="title">
-    <label for="sort_age">Age</label>
+    <label for="sort_age">By Genre</label>
     <br>
     Filter by:
     <input type="checkbox" id="filter_genre" name="filter_genre" value="genre">
-    <label for="filter_children">Children</label>
+    <label for="filter_children">By Title</label>
     <br>
     Search:
     <input type="text" name="search">
