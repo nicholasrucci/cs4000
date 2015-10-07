@@ -72,7 +72,7 @@ function printStr(&$str) {
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <?php if (isset($_SESSION['user_id'])): ?>
-                  <li><a href="sessions/destroy">Logout</a></li>
+                  <li><a href="sessions/destroy.php">Logout</a></li>
                 <?php else: ?>
                   <li><a href="sessions/new.php">Login</a> </li>
                 <?php endif ?>
