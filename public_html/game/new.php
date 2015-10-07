@@ -1,4 +1,5 @@
 <?php require_once("../includes/header.php") ?>
+<?php if(isset($_SESSION['user_id'])): ?>
 
 <h2>Add a Game to the Database</h2>
 
@@ -28,5 +29,11 @@
         <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
     </p>
 </form>
+
+<?php else: ?>
+
+    <h2>You need to login to add a game to the database</h2>
+
+<?php endif ?>
 
 <?php require_once("../includes/footer.php") ?>
