@@ -31,9 +31,9 @@
     <?php else: ?>
 
       <?php if ($success): ?>
-      <h2>You are signed in!</h2> 
+            <?php header('Location: index.php'); ?>
       <?php else: ?>
-      <h2>Invalid email and/or password</h2>
+            <h2>Invalid email and/or password</h2>
       <?php endif ?>
 
     <?php endif ?>
