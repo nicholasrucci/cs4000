@@ -7,7 +7,7 @@
     <label for="sort_age">By Title</label>
     <input type="checkbox" id="filter_genre" name="filter_genre" value="genre">
     <label for="filter_children">By Genre</label>
-    <input type="submit" name="submit" value="Go" class="btn btn-success">
+    <input type="submit" name="submit" value="Go" class="btn btn-success btn-xs">
 </form>
 </p>
 
