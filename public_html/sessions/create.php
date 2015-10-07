@@ -31,7 +31,7 @@
     <?php else: ?>
 
       <?php if ($success): ?>
-            <?php header('Location: index.php'); ?>
+            <?php header('Location: ../index.php'); ?>
       <?php else: ?>
             <h2>Invalid email and/or password</h2>
       <?php endif ?>
