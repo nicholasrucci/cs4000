@@ -1,7 +1,7 @@
 <?php require_once("../includes/header.php"); ?>
 
 <p>
-<form method="get" action="game/index.php">
+<form class="form-horizontal" method="get" action="game/index.php">
     Sort by:
     <input type="checkbox" id="filter_title" name="filter_title" value="title">
     <label for="sort_age">By Title</label>
