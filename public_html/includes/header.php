@@ -71,8 +71,8 @@ function printStr(&$str) {
                 <li><a href="contact.php">Contact</a></li>
               </ul>
               <?php if(isset($_SESSION['user_id'])): ?>
-              <li class="nav navbar-nav navbar-right dropdown"></li>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['email'] ?></a>
+              <li class="nav pull-right"></li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['email'] ?>asdf</a>
                 <ul class="dropdown-menu">
                     <li><a href="sessions/destroy.php"><?php echo $_SESSION['email'] ?>Logout</a></li>
                 </ul>
