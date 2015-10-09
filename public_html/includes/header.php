@@ -70,13 +70,17 @@ function printStr(&$str) {
                 </li>
                 <li><a href="contact.php">Contact</a></li>
               </ul>
+              <?php if(isset($_SESSION['user_id'])): ?>
+              <li class="dropdown"></li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['email'] ?></a>
+                <ul class="nav navbar-nav navbar-right dropdown-menu">
+                    <li><a href="sessions/destroy.php"><?php echo $_SESSION['email'] ?>Logout</a></li>
+                </ul>
+              <?php else: ?>
               <ul class="nav navbar-nav navbar-right">
-                <?php if (isset($_SESSION['user_id'])): ?>
-                  <li><a href="sessions/destroy.php"><?php echo $_SESSION['email'] ?>Logout</a></li>
-                <?php else: ?>
-                  <li><a href="sessions/new.php">Login</a> </li>
-                <?php endif ?>
+                <li><a href="sessions/new.php">Login</a></li>
               </ul>
+              <?php endif ?>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
