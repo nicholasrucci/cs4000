@@ -32,7 +32,12 @@
 
 <?php else: ?>
 
-    <h2>You need to login to add a game to the database</h2>
+    <div class="alert alert-dismissible alert-warning">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4>Warning!</h4>
+        <p>You need to login to create a game.</p>
+        <button class="btn btn-default"><a href="sessions/new.php">Login</a></button>
+    </div>
 
 <?php endif ?>
 
