@@ -15,6 +15,7 @@
       if (password_verify($password, $row['encrypted_password'])) {
         $success = true;
         $_SESSION['user_id'] = $row['id'];
+        $_SESSION['email']   = $row['email'];
       } else {
         $success = false;
       }
