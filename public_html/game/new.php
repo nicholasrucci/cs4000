@@ -36,7 +36,7 @@
         <button type="button" class="close" data-dismiss="alert">×</button>
         <h4>Warning!</h4>
         <p>You need to login to create a game.</p>
-        <button class="btn btn-default"><a href="sessions/new.php">Login</a></button>
+        <a class="btn btn-default" href="sessions/new.php">Login</a>
     </div>
 
 <?php endif ?>
