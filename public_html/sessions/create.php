@@ -34,7 +34,11 @@
       <?php if ($success): ?>
             <?php header('Location: ../index.php'); ?>
       <?php else: ?>
-            <h2>Invalid email and/or password</h2>
+            <div class="alert alert-dismissible alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+            </div>
+            <?php require_once('new.php') ?>
       <?php endif ?>
 
     <?php endif ?>
