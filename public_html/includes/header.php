@@ -76,6 +76,7 @@ function printStr(&$str) {
                   <li><a href="sessions/destroy.php">Logout</a></li>
                 <?php else: ?>
                   <li><a href="sessions/new.php">Login</a> </li>
+                  <li><a href="users/new.php">Sign Up</a> </li>
                 <?php endif ?>
               </ul>
             </div><!-- /.navbar-collapse -->
