@@ -57,7 +57,6 @@
 
 <?php else: ?>
 
-        <h2>There was a problem</h2>
         <?php require_once('new.php') ?>
 
 <?php endif ?>
