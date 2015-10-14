@@ -1,6 +1,6 @@
 <?php require_once("../includes/header.php") ?>
 
-<h2>Add a Game to the Database</h2>
+<h2>Validation Form</h2>
 
 <?php if (isset($errors)): ?>
     <p>The following errors occurred:</p>
