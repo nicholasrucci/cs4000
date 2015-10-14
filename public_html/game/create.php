@@ -10,6 +10,9 @@
 
     $errors = [];
 
+    if (empty($title)) {
+        $errors['title'] = "Enter a value for the game title";
+    }
     if (!ctype_upper($creator)) {
         $errors['creator'] = "Please type Creator in ALL UPPERCASE CHARACTERS";
     }
