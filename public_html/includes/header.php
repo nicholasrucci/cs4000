@@ -61,7 +61,7 @@ function printStr(&$str) {
                   <ul class="dropdown-menu">
                     <li><a href="multiplication.php">Multiplication</a></li>
                     <li><a href="function.php">Function</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="validate/me.php">Validation</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Separated link</a></li>
                     <li role="separator" class="divider"></li>
