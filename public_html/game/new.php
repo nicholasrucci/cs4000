@@ -19,11 +19,11 @@
     </p>
     <p>
         <label for="genre">Genre</label><br>
-        <input type="text" id="genre" name="genre" value="<?php echo isset($_POST['genre']) ? $_POST['genre'] : '' ?>>
+        <input type="text" id="genre" name="genre" value="<?php echo isset($_POST['genre']) ? $_POST['genre'] : '' ?>">
     </p>
     <p>
         <label for="creator">Creator</label><br>
-        <input type="text" id="creator" name="creator" value="<?php echo isset($_POST['creator']) ? $_POST['creator'] : '' ?>>
+        <input type="text" id="creator" name="creator" value="<?php echo isset($_POST['creator']) ? $_POST['creator'] : '' ?>">
     </p>
     <p>
         <input class="btn btn-primary" type="submit" name="submit" value="Add Game">
