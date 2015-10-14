@@ -15,11 +15,11 @@
     }
 
     if (empty($v2)) {
-        $errors['v1'] = "Please type validation 1 in ALL UPPERCASE CHARACTERS";
+        $errors['v2'] = "Please type validation 1 in ALL UPPERCASE CHARACTERS";
     }
 
     if (!preg_match('/^[\w]+$/', $v3)) {
-        $errors['v1'] = "Please include at least one number and one letter";
+        $errors['v3'] = "Please include at least one number and one letter";
     }
 
     $form_valid = empty($errors);
