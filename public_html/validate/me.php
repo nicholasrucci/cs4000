@@ -11,7 +11,7 @@
     </ul>
 <?php endif ?>
 
-<form class="form-horizontal" method="post" action="game/create.php" enctype="multipart/form-data">
+<form class="form-horizontal" method="post" action="validate/create.php" enctype="multipart/form-data">
     <p>
         <label for="title">Uppercase Letters</label><br>
         <input type="text" id="v1" name="v1" value="<?php echo isset($_POST['v1']) ? $_POST['v1'] : '' ?>">
